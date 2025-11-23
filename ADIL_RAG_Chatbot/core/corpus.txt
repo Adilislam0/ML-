@@ -1,0 +1,5 @@
+Linear regression is a type of supervised machine-learning algorithm that learns from labeled datasets to map data points with optimized linear functions for prediction on new datasets. It assumes a linear relationship between input and output and is typically trained using ordinary least squares.
+Gradient descent is an optimization algorithm that iteratively adjusts model parameters to minimize a loss function; it can use batch, stochastic, or mini-batch updates.
+Retrieval-Augmented Generation improves LLM performance by combining external retrieved knowledge with model generation to reduce hallucinations and increase factuality.
+Transformers use attention mechanisms to capture relationships between tokens and are state-of-the-art for many NLP tasks.
+(…add more paragraphs covering domain topics you care about…)
