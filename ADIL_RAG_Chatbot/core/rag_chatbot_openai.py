@@ -12,8 +12,10 @@ MAX_TOKENS = 300
 TEMPERATURE = 0.0
 
 def load_corpus(corpus_path="core/corpus.txt"):
-    with open(corpus_path, "r", encoding="utf-8") as f:
-        docs = [line.strip() for line in f if line.strip()]
+   from core.chunker import load_text_file
+
+self.documents = load_text_file(self.corpus_path, chunk_size=250, overlap=30)
+
     return docs
 
 class RAG:
@@ -62,3 +64,4 @@ class RAG:
         system, user = self.build_messages(query, docs)
         ans = self.call_openai(system, user)
         return ans, docs
+
